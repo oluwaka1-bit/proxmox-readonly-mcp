@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "proxmox-readonly-demo": {
+      "command": "/absolute/path/to/checkout/.venv/bin/proxmox-readonly-mcp",
+      "args": ["--backend", "mock"]
+    }
+  }
+}

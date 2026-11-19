@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proxmox-readonly-mcp-reference"
+version = "0.2.0"
+description = "Read-only Proxmox MCP server with fictional demo and opt-in HTTPS adapter"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["mcp==2.2.0"]
+
+[project.scripts]
+proxmox-readonly-mcp = "mcp_server:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["portfolio_pve", "proxmox_api", "mcp_server"]

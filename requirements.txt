@@ -1,0 +1,4 @@
+# Application SDK; also declared in pyproject.toml.
+mcp==2.2.0
+# Build backend for the documented --no-build-isolation local installation.
+setuptools==84.2.1
